@@ -52,7 +52,13 @@ h1 {
     text-align: center;
     font-family: monospace;
     font-size: 36px;
+    color: black;
 }
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     text-align: center;
     font-size: 18px ;
