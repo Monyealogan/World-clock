@@ -24,6 +24,30 @@ if (sydneyElement) {
     "h:mm:ss [<small>]A[</small>]"
   );
 }
+   // Chicago
+let chicagoElement = document.querySelector("#chicago");
+if (chicagoElement) {
+  let chicagoDateElement = chicagoElement.querySelector(".date");
+  let chicagoTimeElement = chicagoElement.querySelector(".time");
+  let chicagoTime = moment().tz("America/Chicago");
+  
+  chicagoDateElement.innerHTML = chicagoTime.format("MMMM Do YYYY");
+  chicagoTimeElement.innerHTML = chicagoTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+}
+ // Toronto
+let torontoElement = document.querySelector("#toronto");
+if (torontoElement) {
+  let torontoDateElement = torontoElement.querySelector(".date");
+  let torontoTimeElement = torontoElement.querySelector(".time");
+  let torontoTime = moment().tz("America/Toronto");
+  
+  torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
+  torontoTimeElement.innerHTML = torontoTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+}
 }
   updateTime();
 setInterval(updateTime, 1000);
